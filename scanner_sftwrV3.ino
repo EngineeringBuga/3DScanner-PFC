@@ -255,7 +255,6 @@ void forceStopMotors() {
   baseMotor.disableOutputs();
   zAxisMotor.disableOutputs();
   
-  Serial.println("Motores parados e desligados!");
 }
 
 void calibrate() {
@@ -386,7 +385,6 @@ float getDistance() {
   int valid = 0;
   int totalReadings = 5;
   
-  Serial.println("--- DEBUG SENSOR ---");
   Serial.print("Posição: Ângulo=");
   Serial.print(currentAngle);
   Serial.print("°, Z=");
